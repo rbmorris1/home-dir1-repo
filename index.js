@@ -16,7 +16,7 @@ form.onsubmit = async (event) => {
   form.reset();
 };
 
-//display todo
+//display my to-do list
 const getTodos = async () => {
   const allTodos = await db.todos.reverse().toArray();
   list_el.innerHTML = allTodos
